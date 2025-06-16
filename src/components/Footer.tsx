@@ -14,7 +14,8 @@ const Footer = () => {
               Building the next generation of tech talent through practical skills and real-world experience.
             </p>
             <div className="flex space-x-4">
-              {["twitter", "facebook", "instagram", "linkedin", "youtube"].map((social) => (
+              
+              {["https://icons8.com/icon/phOKFKYpe00C/x", "https://icons8.com/icon/60440/facebook-circled", "https://icons8.com/icon/32323/instagram", "https://icons8.com/icon/13930/linkedin"].map((social) => (
                 <a 
                   key={social} 
                   href={`https://${social}.com`} 
@@ -22,7 +23,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-brand-purple transition-colors"
                 >
-                  <span className="sr-only">{social}</span>
+                  <img src={"https://icons8.com/icon/phOKFKYpe00C/x"} className="w-8 h-8" alt="" />
                   <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
                     {social.slice(0,2).toUpperCase()}
                   </div>
@@ -73,7 +74,7 @@ const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} M3. All rights reserved.
+            © {new Date().getFullYear()} M3 software company. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-500 hover:text-brand-purple text-sm">
