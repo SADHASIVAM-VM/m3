@@ -28,11 +28,11 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="bg-gray-50 py-16 sm:py-24">
+    <div className="bg-gradient-to-b from-violet-300 via-violet-100 to-transparent   py-16 sm:py-24">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Success Stories</h2>
-          <p className="text-lg text-gray-600">
+          <h2 className="text-3xl md:text-6xl font-bold mb-6">Success Stories</h2>
+          <p className="text-xl text-gray-600">
             Join hundreds of students who have transformed their careers through practical skills and real-world experience.
           </p>
         </div>

@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
+    <footer className="bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
           <div className="col-span-2">
-            <Link to="/" className="flex items-center mb-4">
-              <span className="text-2xl font-extrabold text-gradient">SkillForge</span>
+            <Link to="/" className="inline-flex rounded-2xl p-1 items-center mb-4 bg-black ">
+              <img src="/logo.png" className="w-20 " alt="" />
             </Link>
             <p className="text-gray-600 mb-4 max-w-xs">
               Building the next generation of tech talent through practical skills and real-world experience.
@@ -24,7 +24,7 @@ const Footer = () => {
                 >
                   <span className="sr-only">{social}</span>
                   <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
-                    {social[0].toUpperCase()}
+                    {social.slice(0,2).toUpperCase()}
                   </div>
                 </a>
               ))}
@@ -73,7 +73,7 @@ const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} SkillForge. All rights reserved.
+            © {new Date().getFullYear()} M3. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-500 hover:text-brand-purple text-sm">

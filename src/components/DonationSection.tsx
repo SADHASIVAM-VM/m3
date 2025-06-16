@@ -20,7 +20,7 @@ const DonationSection = () => {
     // Simulate donation process
     setTimeout(() => {
       setIsLoading(false);
-      toast.success(`Thank you for your ₹${donationAmount} donation!`);
+      toast.success(<p className="bg-[#00ed64] px-3 py-1 rounded-xl">{`Thank you for your ₹${donationAmount} donation!`}</p>);
     }, 1500);
   };
 
@@ -37,7 +37,7 @@ const DonationSection = () => {
         <Card className="max-w-md mx-auto border-none shadow-md">
           <CardHeader>
             <CardTitle className="text-center flex items-center justify-center">
-              <Heart className="text-brand-purple mr-2" /> Make a Donation
+              ❤️ Make a Donation
             </CardTitle>
             <CardDescription className="text-center">
               Every contribution helps create opportunities for students without traditional degrees.

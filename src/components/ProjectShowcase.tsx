@@ -53,7 +53,7 @@ const ProjectShowcase = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
-          <Card key={project.id} className="overflow-hidden card-hover border border-gray-200">
+          <Card key={project.id} className="overflow-hidden border-none">
             <div className="relative h-48 overflow-hidden">
               <img 
                 src={project.image} 

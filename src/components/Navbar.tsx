@@ -8,19 +8,19 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80">
+    <header className="sticky top-0 z-50 bg-black backdrop-blur-md border-b ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <Link to="/" className="flex items-center">
-              <span className="text-2xl font-extrabold text-gradient">SkillForge</span>
+            <Link to="/" className="flex items-center  rounded-xl">
+              <img src='/logo.png' className="w-16  font-extrabold text-gradient"/>
             </Link>
           </div>
           
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white  focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Open menu</span>
@@ -29,14 +29,14 @@ const Navbar = () => {
           </div>
           
           <nav className="hidden md:flex space-x-10">
-            <Link to="/projects" className="text-base font-medium text-gray-700 hover:text-brand-purple transition-colors">
+            <Link to="/projects" className="text-base font-medium text-white hover:text-brand-purple transition-colors">
               Projects
             </Link>
-            <Link to="/internships" className="text-base font-medium text-gray-700 hover:text-brand-purple transition-colors">
+            <Link to="/internships" className="text-base font-medium text-white hover:text-brand-purple transition-colors">
               Internships
             </Link>
             <div className="relative group">
-              <button className="text-base font-medium text-gray-700 group-hover:text-brand-purple transition-colors inline-flex items-center">
+              <button className="text-base font-medium text-white group-hover:text-brand-purple transition-colors inline-flex items-center">
                 Resources
                 <ChevronDown size={16} className="ml-1 mt-0.5" />
               </button>
@@ -56,7 +56,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <Link to="/success-stories" className="text-base font-medium text-gray-700 hover:text-brand-purple transition-colors">
+            <Link to="/success-stories" className="text-base font-medium text-white hover:text-brand-purple transition-colors">
               Success Stories
             </Link>
           </nav>

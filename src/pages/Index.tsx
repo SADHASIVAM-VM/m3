@@ -21,7 +21,7 @@ const Index = () => {
         <ProjectShowcase />
         <Testimonials />
         <PricingSection />
-        <DonationSection />
+       
         <CTASection />
       </main>
       <Footer />

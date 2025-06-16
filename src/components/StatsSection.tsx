@@ -5,19 +5,19 @@ import { Users, Briefcase, Award, Star } from "lucide-react";
 const stats = [
   {
     id: 1,
-    name: "Students Trained",
-    value: "15,000+",
+    name: "Students learned",
+    value: "5,000+",
     icon: <Users className="h-8 w-8 text-brand-purple" />
   },
   {
     id: 2,
-    name: "Hiring Partners",
+    name: "project submitted",
     value: "200+",
     icon: <Briefcase className="h-8 w-8 text-brand-teal" />
   },
   {
     id: 3,
-    name: "Placement Rate",
+    name: "Experience Rate",
     value: "92%",
     icon: <Award className="h-8 w-8 text-brand-blue" />
   },

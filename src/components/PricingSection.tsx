@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const PricingSection = () => {
   return (
     <div className="section-container">
-      <div className="text-center max-w-3xl mx-auto mb-16">
+      <div className="text-center max-w-3xl mx-auto ">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Simple, Transparent Pricing</h2>
         <p className="text-lg text-gray-600">
           Affordable learning paths with no hidden fees. Pay only for what you need.
@@ -48,7 +48,7 @@ const PricingSection = () => {
         </Card>
         
         {/* Premium Plan */}
-        <Card className="border-2 border-brand-purple relative overflow-hidden shadow-md card-hover">
+        <Card className="border-2 bg-brand-purple/30 bg-gradient-to-t relative overflow-hidden shadow-md card-hover">
           <div className="absolute top-0 right-0 bg-brand-purple text-white text-xs font-bold py-1 px-3 rounded-bl">
             POPULAR
           </div>
@@ -58,7 +58,7 @@ const PricingSection = () => {
           </CardHeader>
           <CardContent>
             <div className="mb-6">
-              <span className="text-4xl font-bold">₹49</span>
+              <span className="text-4xl font-bold">₹99</span>
               <span className="text-gray-500 ml-2">per project</span>
             </div>
             <ul className="space-y-3">

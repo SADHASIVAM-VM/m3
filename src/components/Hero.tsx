@@ -71,8 +71,8 @@ const Hero = () => {
                     <div className="h-2 bg-gray-200 rounded"></div>
                     <div className="h-10 bg-gray-200 rounded"></div>
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="h-20 bg-brand-purple/10 rounded-lg flex items-center justify-center text-brand-purple">HTML/CSS</div>
-                      <div className="h-20 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-blue">JavaScript</div>
+                      <div className="h-20 bg-brand-purple/10 rounded-lg flex items-center justify-center text-brand-purple">React.Js</div>
+                      <div className="h-20 bg-brand-blue/10 rounded-lg flex items-center justify-center text-brand-blue">Next.Js</div>
                     </div>
                     <div className="h-2 bg-gray-200 rounded w-5/6"></div>
                     <div className="h-2 bg-gray-200 rounded"></div>
