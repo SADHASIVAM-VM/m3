@@ -1,4 +1,5 @@
 
+import { Facebook, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -15,20 +16,15 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               
-              {["https://icons8.com/icon/phOKFKYpe00C/x", "https://icons8.com/icon/60440/facebook-circled", "https://icons8.com/icon/32323/instagram", "https://icons8.com/icon/13930/linkedin"].map((social) => (
-                <a 
-                  key={social} 
-                  href={`https://${social}.com`} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-500 hover:text-brand-purple transition-colors"
-                >
-                  <img src={"https://icons8.com/icon/phOKFKYpe00C/x"} className="w-8 h-8" alt="" />
-                  <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
-                    {social.slice(0,2).toUpperCase()}
+            <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
+                    <Twitter/>
                   </div>
-                </a>
-              ))}
+            <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
+                    <Facebook/>
+                  </div>
+            <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
+                    <Linkedin/>
+                  </div>
             </div>
           </div>
           
